@@ -1,0 +1,72 @@
+.head-image {
+  background-color: rgb(212, 178, 178);
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+
+/* main */
+.head-title {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.head-title-sz-bock {
+  width: 250px;
+  height: 200px;
+}
+
+h1,
+h2,
+h3,
+.highlight,
+.categories {
+  text-align: center;
+}
+
+.categories,
+h1 {
+  background-color: #393939;
+}
+.categories__list {
+  /* padding: 0; */
+  /* margin: 0; */
+  padding: 0.5em;
+}
+.navigation__item {
+  color: #fff;
+}
+.navigation__item--separator {
+  padding-left: 1em;
+  border-left: 4px solid #5bacc3;
+}
+
+.secondary-color {
+  color: #fff;
+}
+
+/*  odd/even colors for cections */
+section:nth-of-type(even) {
+  background-color: #f7f7f7;
+}
+section:nth-of-type(odd) {
+  background-color: #fff0ed;
+}
+.section-menu {
+  display: block;
+  padding: 1.5em 0 1em 0;
+}
+.push--down {
+  padding-bottom: 0.4rem;
+}
+.section-article__textblock {
+  font-style: italic;
+  width: 28em;
+  /* centering the section-article */
+  margin: auto;
+  text-align: center;
+}
