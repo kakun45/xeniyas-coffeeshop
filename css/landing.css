@@ -31,7 +31,7 @@ button {
   padding: 2em 0 3em;
 }
 .nitro-coffee__img {
-  padding: 30px 0;
+  padding: 1.875rem 0;
   /* but it needs the margin-left: 10vw; for a responsive view */
 }
 .card__title {
@@ -44,8 +44,9 @@ button {
 }
 .card__item {
   background-color: #ffff;
-  width: 330px;
-  height: 440px;
+  width: 20.625rem;
+  width: 20.625rem;
+  height: 27.5rem;
   display: inline-block;
   padding: 2em 0 0;
   margin: 0 2em 2em;
@@ -56,14 +57,14 @@ button {
   margin-left: calc((100% / 3) - 2em);
   margin-right: calc((100% / 3) - 2em);
   margin-bottom: 2em;*/
-  border-radius: 10px;
+  border-radius: 0.62rem;
   box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
   text-align: center;
   overflow: hidden;
   vertical-align: top;
 }
 .card__img {
-  height: 248px;
+  height: 15.5rem;
 }
 .card__text {
   font-size: 1.5rem;
@@ -72,19 +73,46 @@ button {
 .our-product {
   text-align: center;
   vertical-align: middle;
-  padding-bottom: 4em;
+  padding-bottom: 5rem;
 }
 .we-are {
+  padding-top: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.we-are__right {
-  width: 400px;
-  height: 400px;
+.we-re__parent {
+  position: relative;
+  top: 0;
+  left: 0;
 }
-/* footer */
+.we-re__text--narrow {
+  font-size: 1.2rem;
+  width: 60%;
+  padding: 2rem 0;
+}
+.we-are__icons {
+  width: 56%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 2rem;
+}
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #5bacc3;
+  width: 25rem;
+}
+.frontground {
+  position: absolute;
+  top: 4rem;
+  left: 7rem;
+  /* border: 1px solid red; */
+}
+/* FOOTER */
 .footer {
-  height: 200px;
+  height: 12.5rem;
   text-align: center;
 }
 .footer__item {
@@ -96,7 +124,7 @@ button {
   text-align: left;
 }
 .social__img--size {
-  width: 50px;
+  width: 3.125rem;
 }
 .card__bottom {
   display: flex;
