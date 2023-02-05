@@ -141,11 +141,11 @@ button {
 }
 /* FOOTER */
 .footer-mama {
-  height: 12.5rem;
+  height: 14.5rem;
   text-align: center;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  position: relative;
+  position: relative; */
 }
 .beans__decor {
   width: 100%;
@@ -159,24 +159,21 @@ button {
   opacity: 20%;
 }
 .beans__decor--left {
-  top: 2rem;
+  position: absolute;
+  top: 1rem;
   left: -2.5rem;
 }
 .beans__decor--right {
   position: absolute;
-  /* top: 2rem;
-  left: auto;  */
-  top: 2rem;
-  left: -2.5rem;
-
-  /* needs to tie to a vp */
+  top: 6rem;
+  right: -2rem;
 }
 .footer__item {
   width: 20%;
   line-height: 1.5;
   vertical-align: middle;
   display: inline-block;
-  padding: 1em;
+  padding: 0.7em;
   text-align: left;
 }
 .social__img--size {
