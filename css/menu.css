@@ -3,7 +3,7 @@
   background-image: url("../assets/images/coffee-circle.jpg");
   background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 31.25rem;
   width: 100%;
   display: flex;
 }
@@ -16,8 +16,8 @@
   align-items: center;
 }
 .head-title-sz-bock {
-  width: 250px;
-  height: 200px;
+  width: 15.625rem;
+  height: 12.5rem;
 }
 
 h1,

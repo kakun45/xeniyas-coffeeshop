@@ -55,7 +55,14 @@
               seeds of berries from certain Coffea species.
             </p>
             <!-- A button stating "SHOP NOW" -->
-            <a href="./pages/menu.html"><button>SHOP NOW</button></a>
+            <!-- old <a href=""><button>SHOP NOW</button></a> -->
+
+            <div class="button-parent">
+              <button class="button"></button>
+              <a href="./pages/menu.html"
+                ><div class="button__border">SHOP NOW</div></a
+              >
+            </div>
           </div>
           <div class="nitro-coffee__img">
             <img src="./assets/images/coffeebeans-hero.png" alt="coffee bag" />
@@ -115,7 +122,15 @@
 
           <!-- A button stating "VIEW ALL" -->
         </div>
-        <a href="./pages/menu.html"><button>VIEW ALL</button></a>
+        <!-- <a href="./pages/menu.html"><button>VIEW ALL</button></a> -->
+        <div class="button--centered">
+          <div class="button-parent">
+            <button class="button"></button>
+            <a href="./pages/menu.html"
+              ><div class="button__border">SHOP NOW</div></a
+            >
+          </div>
+        </div>
         <!-- Discount Section -->
       </section>
       <article class="we-are">
@@ -141,10 +156,12 @@
               alt="cup of hot coffee"
             />
           </div>
-          <a href="#"><button class="button">LEARN MORE</button></a>
+          <div class="button-parent">
+            <button class="button"></button>
+            <a href="#"><div class="button__border">LEARN MORE</div></a>
+          </div>
         </div>
         <div class="we-re__parent --right">
-          <!-- <div > -->
           <img
             class="background"
             src="./assets/images/coldbrewbackground.png"
@@ -155,7 +172,7 @@
             src="./assets/images/tiltedcan.png"
             alt="tilted black can of coffee"
           />
-          <!-- </div> -->
+          <div class="frontground--border"></div>
         </div>
       </article>
       <p class="discount-text">
@@ -164,47 +181,61 @@
       </p>
     </main>
 
-    <!-- Footer
+    <!-- FOOTER
     The footer must include:
     An “Address” division. -->
-    <footer class="footer">
-      <section class="footer__item">
-        <h3 class="card__title">Address</h3>
-        <!-- Paragraph tags with the address information -->
-        <p>503 Broadway Penthouse</p>
-        <p>New York</p>
-      </section>
-      <!-- An “Hours” division. This division will contain: -->
-      <section class="footer__item">
-        <h3 class="card__title">Hours</h3>
-        <!-- Paragraph tags with the information related to hours of operation -->
-        <p><strong>Monday - Friday:</strong> 9am - 7pm</p>
-        <p><strong>Saturday - Sunday:</strong> 10am - 5pm</p>
-      </section>
+    <footer>
+      <div class="footer-mama">
+          <div class="beans__decor">
+            <img class="beans__decor--left"
+              src="./assets/logos/coffee-beans-logo-and-footer.svg"
+              alt="coffee beans"
+            />
+            <img class="beans__decor--right"
+              src="./assets/logos/coffee-beans-logo-and-footer.svg"
+              alt="coffee beans"
+            />
+          </div>
 
-      <!-- A “Social division.” -->
-      <section class="social footer__item">
-        <h3 class="card__title">Social</h3>
-        <!-- social (Facebook, Yelp, Instagram) -->
-        <a href="https://www.facebook.com/"
-          ><img
-            class="social__img--size"
-            src="./assets/logos/Facebook-Icon.svg"
-            alt="Facebook"
-        /></a>
-        <a href="https://www.yelp.com/"
-          ><img
-            class="social__img--size"
-            src="./assets/logos/Yelp-Icon.svg"
-            alt="Yelp"
-        /></a>
-        <a href="https://www.instagram.com/"
-          ><img
-            class="social__img--size"
-            src="./assets/logos/Instagram-Icon.svg"
-            alt="Instagram"
-        /></a>
-      </section>
+
+        <section class="footer__item">
+          <h3 class="card__title">Address</h3>
+          <!-- Paragraph tags with the address information -->
+          <p>503 Broadway Penthouse</p>
+          <p>New York</p>
+        </section>
+        <!-- An “Hours” division. This division will contain: -->
+        <section class="footer__item">
+          <h3 class="card__title">Hours</h3>
+          <!-- Paragraph tags with the information related to hours of operation -->
+          <p><strong>Monday - Friday:</strong> 9am - 7pm</p>
+          <p><strong>Saturday - Sunday:</strong> 10am - 5pm</p>
+        </section>
+
+        <!-- A “Social division.” -->
+        <section class="social footer__item">
+          <h3 class="card__title">Social</h3>
+          <!-- social (Facebook, Yelp, Instagram) -->
+          <a href="https://www.facebook.com/"
+            ><img
+              class="social__img--size"
+              src="./assets/logos/Facebook-Icon.svg"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.yelp.com/"
+            ><img
+              class="social__img--size"
+              src="./assets/logos/Yelp-Icon.svg"
+              alt="Yelp"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              class="social__img--size"
+              src="./assets/logos/Instagram-Icon.svg"
+              alt="Instagram"
+          /></a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

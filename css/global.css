@@ -20,14 +20,14 @@
 .navigation__item {
   list-style: none;
   display: inline-block;
-  margin: 10px;
+  margin: 0.625rem;
   vertical-align: middle;
 }
 .navigation__item a {
   text-decoration: none;
 }
 .icons {
-  width: 50px;
+  width: 3.125rem;
 }
 /* this keeps a main nav bar narrower */
 #nitro {

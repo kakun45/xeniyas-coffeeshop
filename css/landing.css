@@ -5,14 +5,37 @@ footer {
   background-color: #fff0ed;
 }
 
+.button--centered {
+  display: inline-block;
+}
 button {
   /*  def em(num):
 ...   return  num*3.33em/60px */
   width: 9.99rem;
+  height: 3.5rem;
   padding: 1.109rem;
   color: white;
   background-color: #5bacc3;
   border: 0;
+  position: relative;
+}
+.button-parent {
+  position: relative;
+}
+.button__border {
+  position: absolute;
+  width: 9.99rem;
+  height: 3.5rem;
+  padding: 1.109rem;
+  color: white;
+  text-align: center;
+  top: -0.4rem;
+  left: -0.401rem;
+  border: 2px solid black;
+}
+.button__border a {
+  text-decoration: none;
+  color: white;
 }
 
 /* header banner */
@@ -101,19 +124,52 @@ button {
   position: relative;
   top: 0;
   left: 0;
-  border: 1px solid #5bacc3;
   width: 25rem;
 }
 .frontground {
   position: absolute;
   top: 4rem;
   left: 7rem;
-  /* border: 1px solid red; */
+}
+.frontground--border {
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  top: -0.6rem;
+  left: -0.6rem;
+  border: 3px solid #5bacc3;
 }
 /* FOOTER */
-.footer {
+.footer-mama {
   height: 12.5rem;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.beans__decor {
+  width: 100%;
+  position: absolute;
+  /* top: 2rem;
+  left: -2.5rem; */
+}
+
+.beans__decor img {
+  width: 7rem;
+  opacity: 20%;
+}
+.beans__decor--left {
+  top: 2rem;
+  left: -2.5rem;
+}
+.beans__decor--right {
+  position: absolute;
+  /* top: 2rem;
+  left: auto;  */
+  top: 2rem;
+  left: -2.5rem;
+
+  /* needs to tie to a vp */
 }
 .footer__item {
   width: 20%;
