@@ -271,13 +271,20 @@ button {
   position: absolute;
 }
 
-.image-box {
+.image-box--left {
   width: 100px;
-  height: 200px;
+  height: 14.5rem;
   overflow: hidden;
-  background-color: red;
-  border: 5px solid blue;
-  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+
+.image-box--right {
+  width: 100px;
+  height: 14.5rem;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
 }
 
 .beans__decor img {
@@ -293,7 +300,9 @@ button {
 
 .beans__decor--right {
   position: absolute;
+  max-width: initial;
   top: 6rem;
+  right: -2rem;
 }
 
 .footer__item {
@@ -312,8 +321,6 @@ button {
 .card__bottom {
   display: flex;
   height: 10rem;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-around;
 }
