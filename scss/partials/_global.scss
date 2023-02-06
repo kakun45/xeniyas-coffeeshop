@@ -82,7 +82,22 @@ button,
   /* 2 mokups overlap on this one: width: 90%; */
   margin: 8rem;
   padding: 0.5em;
+  transition: background-color 0.5s;
 }
 .discount-text strong {
   font-weight: 700;
+}
+@keyframes color-change {
+  0% {
+    background-color: $charcoal;
+  }
+  50% {
+    background-color: $highlight;
+  }
+  100% {
+    background-color: $charcoal;
+  }
+}
+.discount-text {
+  animation: color-change 3s ease-in-out infinite;
 }
