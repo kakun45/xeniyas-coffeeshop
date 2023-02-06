@@ -109,11 +109,29 @@ button,
 }
 
 /* main */
+.head-title__parent {
+  position: relative;
+}
+
+.head-title--border {
+  border: 3px solid #5bacc3;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .head-title {
   width: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .head-title-sz-bock {

@@ -1,6 +1,7 @@
 @use "./partials/global" as *;
 @use "./partials/variables" as *;
 
+// hero
 .head-image {
   background-color: $background-third;
   background-image: url("../assets/images/coffee-circle.jpg");
@@ -12,11 +13,27 @@
 }
 
 /* main */
+.head-title__parent {
+  position: relative;
+}
+.head-title--border {
+  border: 3px solid $highlight;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  color: $background-first;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .head-title {
   width: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .head-title-sz-bock {
   width: 15.625rem;

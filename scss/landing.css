@@ -182,7 +182,8 @@ button {
   margin: 0 2em 2em;
   /* margin: 20px; */
   /* margin: 0 calc((100% / 3) - 2em) 2em; 
-  analog: 
+
+  analog to: 
   margin-top: 0;
   margin-left: calc((100% / 3) - 2em);
   margin-right: calc((100% / 3) - 2em);
@@ -257,48 +258,42 @@ button {
   border: 3px solid #5bacc3;
 }
 
-/* FOOTER. */
+/* FOOTER */
 .footer-mama {
   height: 14.5rem;
   text-align: center;
-  /* display: flex;
+  display: flex;
   justify-content: space-around;
-  position: relative; */
+  position: relative;
 }
 
-.beans__decor {
-  width: 100%;
-  position: absolute;
-}
-
-.image-box--left {
+.beans-decor__image-box, .beans-decor__image-box--right, .beans-decor__image-box--left {
   width: 100px;
   height: 14.5rem;
   overflow: hidden;
   position: absolute;
+}
+
+.beans-decor__image-box--left {
   left: 0;
 }
 
-.image-box--right {
-  width: 100px;
-  height: 14.5rem;
-  overflow: hidden;
-  position: absolute;
+.beans-decor__image-box--right {
   right: 0;
 }
 
-.beans__decor img {
+.beans-decor img {
   width: 7rem;
   opacity: 20%;
 }
 
-.beans__decor--left {
+.beans-decor--left {
   position: absolute;
   top: 1rem;
   left: -2.5rem;
 }
 
-.beans__decor--right {
+.beans-decor--right {
   position: absolute;
   max-width: initial;
   top: 6rem;

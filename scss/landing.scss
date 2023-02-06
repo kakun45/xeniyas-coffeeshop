@@ -1,6 +1,6 @@
 @use "./partials/global" as *;
 @use "./partials/variables" as *;
-
+@use "./partials/mixins" as *;
 /* header */
 header,
 .nitro-coffee,
@@ -77,7 +77,8 @@ button {
     margin: 0 2em 2em;
     /* margin: 20px; */
     /* margin: 0 calc((100% / 3) - 2em) 2em; 
-    analog: 
+    
+    analog to: 
     margin-top: 0;
     margin-left: calc((100% / 3) - 2em);
     margin-right: calc((100% / 3) - 2em);
@@ -98,6 +99,7 @@ button {
     font-size: 1.5rem;
   }
 }
+// analog to:
 // .card__img {
 //   height: 15.5rem;
 // }
@@ -153,20 +155,31 @@ button {
   border: 3px solid $highlight;
 }
 
-/* FOOTER. */
+/* FOOTER */
 .footer-mama {
   height: 14.5rem;
   text-align: center;
-  /* display: flex;
+  display: flex;
   justify-content: space-around;
-  position: relative; */
+  position: relative;
 }
-.beans__decor {
-  width: 100%;
-  position: absolute;
-  // overflow: hidden; // but it hides 2-side beans completely
-}
-.image-box--left {
+// .beans-decor {
+// width: 100%;
+// position: absolute;
+// overflow: hidden; // but it hides 2-side beans completely
+// }
+// .beans-decor__image-box--left {
+//   width: 100px;
+//   height: 14.5rem; // must be height of footer-mama
+//   overflow: hidden;
+//   // for testing:
+//   // background-color: red;
+//   // border: 5px solid blue;
+//   position: absolute;
+//   left: 0;
+// }
+
+.beans-decor__image-box {
   width: 100px;
   height: 14.5rem; // must be height of footer-mama
   overflow: hidden;
@@ -174,27 +187,34 @@ button {
   // background-color: red;
   // border: 5px solid blue;
   position: absolute;
+}
+.beans-decor__image-box--left {
+  @extend .beans-decor__image-box;
   left: 0;
 }
-.image-box--right {
-  width: 100px;
-  height: 14.5rem; // must be height of footer-mama
-  overflow: hidden;
-  // background-color: red;
-  // border: 5px solid blue;
-  position: absolute;
+// .ibeans-decor__image-box--right {
+//   width: 100px;
+//   height: 14.5rem; // must be height of footer-mama
+//   overflow: hidden;
+//   // background-color: red;
+//   // border: 5px solid blue;
+//   position: absolute;
+//   right: 0;
+// }
+.beans-decor__image-box--right {
+  @extend .beans-decor__image-box;
   right: 0;
 }
-.beans__decor img {
+.beans-decor img {
   width: 7rem;
   opacity: 20%;
 }
-.beans__decor--left {
+.beans-decor--left {
   position: absolute;
   top: 1rem;
   left: -2.5rem;
 }
-.beans__decor--right {
+.beans-decor--right {
   position: absolute;
   max-width: initial;
   top: 6rem;
