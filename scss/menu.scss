@@ -1,5 +1,8 @@
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+
 .head-image {
-  background-color: rgb(212, 178, 178);
+  background-color: $background-third;
   background-image: url("../assets/images/coffee-circle.jpg");
   background-position: center;
   background-size: cover;
@@ -30,31 +33,29 @@ h3,
 
 .categories,
 h1 {
-  background-color: #393939;
+  background-color: $charcoal;
 }
 .categories__list {
-  /* padding: 0; */
-  /* margin: 0; */
   padding: 0.5em;
 }
 .navigation__item {
-  color: #fff;
+  color: $background-first;
 }
 .navigation__item--separator {
   padding-left: 1em;
-  border-left: 4px solid #5bacc3;
+  border-left: 4px solid $highlight;
 }
 
 .secondary-color {
-  color: #fff;
+  color: $background-first;
 }
 
 /*  odd/even colors for cections */
 section:nth-of-type(even) {
-  background-color: #f7f7f7;
+  background-color: $charcoal-light;
 }
 section:nth-of-type(odd) {
-  background-color: #fff0ed;
+  background-color: $background-second;
 }
 .section-menu {
   display: block;

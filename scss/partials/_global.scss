@@ -1,3 +1,6 @@
+@use "./variables" as *;
+
+// /* this is _global */
 *,
 *::before,
 *::after {
@@ -8,7 +11,7 @@
 /* header */
 .header {
   width: 100%;
-  background-color: #fff0ed;
+  background-color: $background-second;
 }
 
 /* main nav */
@@ -37,7 +40,7 @@ body {
   font-family: "Open Sans";
   font-weight: 400;
   /* Primary font color */
-  color: #393939;
+  color: $charcoal;
 }
 h1,
 h2 {
@@ -55,13 +58,13 @@ p {
   font-size: 0.99rem;
 }
 .highlight {
-  color: #5bacc3;
+  color: $highlight;
 }
 .highligh_opposit {
-  background-color: #fff0ed;
+  background-color: $background-second;
 }
 .neutral {
-  background-color: #f7f7f7;
+  background-color: $charcoal-light;
 }
 button,
 .navigation__item {
@@ -71,8 +74,8 @@ button,
 
 /* discount banner */
 .discount-text {
-  background-color: #393939;
-  color: #fff;
+  background-color: $charcoal;
+  color: $background-first;
   font-size: 2.497em;
   font-weight: 400;
   text-align: center;

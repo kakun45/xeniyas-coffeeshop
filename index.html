@@ -7,8 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/landing.css" />
+    <!-- <link rel="stylesheet" href="./css/global.css" /> -->
+    <link rel="stylesheet" href="./scss/landing.css" />
     <title>Coffee Shop - Home</title>
   </head>
 
@@ -134,9 +134,9 @@
         <!-- Discount Section -->
       </section>
       <article class="we-are">
-        <div class="we-re__left">
+        <div class="we-are__left">
           <h2 class="card__title">We're Different</h2>
-          <p class="we-re__text--narrow">
+          <p class="we-are__text--narrow">
             We grow and roast our own beans. Every bean, every cup, every step
             of the way, we strive for exellence.
           </p>
@@ -161,7 +161,8 @@
             <a href="#"><div class="button__border">LEARN MORE</div></a>
           </div>
         </div>
-        <div class="we-re__parent --right">
+        <!-- don't mess with this line: the can will jump on top -->
+        <div class="we-are__parent">
           <img
             class="background"
             src="./assets/images/coldbrewbackground.png"
@@ -186,17 +187,25 @@
     An “Address” division. -->
     <footer>
       <div class="footer-mama">
-          <div class="beans__decor">
-            <img class="beans__decor--left"
+        <div class="beans__decor">
+          <div class="image-box" style="width: 100px; position: absolute; left: 0;">
+            <img
+              class="beans__decor--left"
+               
               src="./assets/logos/coffee-beans-logo-and-footer.svg"
               alt="coffee beans"
             />
-            <img class="beans__decor--right"
-              src="./assets/logos/coffee-beans-logo-and-footer.svg"
-              alt="coffee beans"
-            />
-          </div>
+            </div>
+            <div class="image-box" style="width: 100px; position: absolute; right: 0;">
 
+            <img
+              class="beans__decor--right"
+              style="max-width: initial"
+              src="./assets/logos/coffee-beans-logo-and-footer.svg"
+              alt="coffee beans"
+            /></div>
+          </div>
+        </div>
 
         <section class="footer__item">
           <h3 class="card__title">Address</h3>

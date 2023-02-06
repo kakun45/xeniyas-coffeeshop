@@ -1,8 +1,11 @@
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+
 /* header */
 header,
 .nitro-coffee,
 footer {
-  background-color: #fff0ed;
+  background-color: $background-second;
 }
 
 .button--centered {
@@ -14,8 +17,8 @@ button {
   width: 9.99rem;
   height: 3.5rem;
   padding: 1.109rem;
-  color: white;
-  background-color: #5bacc3;
+  color: $background-first;
+  background-color: $highlight;
   border: 0;
   position: relative;
 }
@@ -27,7 +30,7 @@ button {
   width: 9.99rem;
   height: 3.5rem;
   padding: 1.109rem;
-  color: white;
+  color: $background-first;
   text-align: center;
   top: -0.4rem;
   left: -0.401rem;
@@ -35,7 +38,7 @@ button {
 }
 .button__border a {
   text-decoration: none;
-  color: white;
+  color: $background-first;
 }
 
 /* header banner */
@@ -48,6 +51,8 @@ button {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 .nitro-coffee__text {
   width: 40%;
@@ -57,41 +62,49 @@ button {
   padding: 1.875rem 0;
   /* but it needs the margin-left: 10vw; for a responsive view */
 }
-.card__title {
-  padding: 0.8em 0;
-}
+
 /* cards cection */
 .card {
   text-align: center;
   padding-bottom: 2em;
+  &__item {
+    background-color: $background-first;
+    width: 20.625rem;
+    width: 20.625rem;
+    height: 27.5rem;
+    display: inline-block;
+    padding: 2em 0 0;
+    margin: 0 2em 2em;
+    /* margin: 20px; */
+    /* margin: 0 calc((100% / 3) - 2em) 2em; 
+    analog: 
+    margin-top: 0;
+    margin-left: calc((100% / 3) - 2em);
+    margin-right: calc((100% / 3) - 2em);
+    margin-bottom: 2em;*/
+    border-radius: 0.62rem;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    overflow: hidden;
+    vertical-align: top;
+  }
+  &__title {
+    padding: 0.8em 0;
+  }
+  &__img {
+    height: 15.5rem;
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
 }
-.card__item {
-  background-color: #ffff;
-  width: 20.625rem;
-  width: 20.625rem;
-  height: 27.5rem;
-  display: inline-block;
-  padding: 2em 0 0;
-  margin: 0 2em 2em;
-  /* margin: 20px; */
-  /* margin: 0 calc((100% / 3) - 2em) 2em; 
-  analog: 
-  margin-top: 0;
-  margin-left: calc((100% / 3) - 2em);
-  margin-right: calc((100% / 3) - 2em);
-  margin-bottom: 2em;*/
-  border-radius: 0.62rem;
-  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  overflow: hidden;
-  vertical-align: top;
-}
-.card__img {
-  height: 15.5rem;
-}
-.card__text {
-  font-size: 1.5rem;
-}
+// .card__img {
+//   height: 15.5rem;
+// }
+
+// .card__text {
+//   font-size: 1.5rem;
+// }
 
 .our-product {
   text-align: center;
@@ -104,12 +117,12 @@ button {
   justify-content: space-evenly;
   align-items: center;
 }
-.we-re__parent {
+.we-are__parent {
   position: relative;
   top: 0;
   left: 0;
 }
-.we-re__text--narrow {
+.we-are__text--narrow {
   font-size: 1.2rem;
   width: 60%;
   padding: 2rem 0;
@@ -137,23 +150,35 @@ button {
   position: absolute;
   top: -0.6rem;
   left: -0.6rem;
-  border: 3px solid #5bacc3;
+  border: 3px solid $highlight;
 }
-/* FOOTER */
+
+/* FOOTER. */
 .footer-mama {
   height: 14.5rem;
   text-align: center;
   /* display: flex;
   justify-content: space-around;
   position: relative; */
+  // overflow: hidden;
 }
 .beans__decor {
   width: 100%;
   position: absolute;
-  /* top: 2rem;
-  left: -2.5rem; */
+  // overflow: hidden; // but it hides 2-side beans completely
 }
+.image-box {
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  background-color: red;
+  border: 5px solid blue;
+  z-index: 1;
 
+  // width: 50px;
+  // position: absolute;
+  // left: 0;
+}
 .beans__decor img {
   width: 7rem;
   opacity: 20%;
@@ -166,8 +191,8 @@ button {
 .beans__decor--right {
   position: absolute;
   top: 6rem;
-  right: -2rem;
 }
+
 .footer__item {
   width: 20%;
   line-height: 1.5;
@@ -187,8 +212,8 @@ button {
   align-items: center;
   justify-content: space-around;
 }
-.card__title {
-}
+// .card__title {
+// }
 .card__subtitle {
   text-align: left;
 }
